@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real State</title>
+</head>
+<body>
+    <h1>Real State</h1>
+    <form action="">
+        <p>
+            <label for="usuario">ingresar usuario</label>
+            <input type="text" name="usuario">
+        </p>
+        <p>
+            <input type="submit" value="log in">            
+        </p>
+        <hr>
+        <h2>ver catalogo</h2>
+        <div id="info"></div>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('data.json')
+            .then(response => response.json())            
+            .then(data => {
+                const infoDiv = document.getElementById('info');                
+                infoDiv.innerHTML = 
+                `               
+                <p><strong>precio:</strong> ${data.precio}</p>                
+                <p><strong>zona:</strong> ${data.zona}</p>                
+                <p><strong>número de habitaciones:</strong> ${data.numerodehabitaciones}</p>
+                `;                
+            })            
+            .catch(error => console.error('Error al cargar el JSON:', error));        
+        });
+    </script>
+</body>
+</html>

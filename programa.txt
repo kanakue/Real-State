@@ -1,0 +1,30 @@
+fecha: 50 VI 19
+
+La misión de hoy será la siguiente:
+
+Habrá que hacer el frontend y la DB para poder realizar el proyecto que se describe más adelante.
+
+- Deben de trabajar en equipos de 2 o 3 personas
+- Su código debe compartirse en github
+
+================
+Una empresa de Real State quiere publicar sus productos en un sitio web las esto es lo que quiere hacer
+
+FUNCIONALIDADES
+- Sólo cierto tipo de usuarios podrán dar de alta las propiedades
+- Los usuarios generales pueden
+    - Ver todo el catálogo de productos
+    - Buscar productos por
+        - Precio
+        - Zona
+        - Núm de habitaciones
+
+CARACTERÍSTICAS TÉCNICAS
+- El código se trabajará usando sintaxis ES5
+    - var
+    - function
+    - prototipe
+- La información de los productos se guardará en un archivo JSON
+- En un futuro se trabajará usando AJAX
+- Debe de haber un repositorio compartido para trabajar el proyecto en equipo
+- El código debe trabajarse en INGLÉS (nombres de variables, constantes, funciones, etc.)
